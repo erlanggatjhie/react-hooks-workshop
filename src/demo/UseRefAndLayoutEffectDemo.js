@@ -6,7 +6,6 @@ const UseRefDemoAndLayoutEffectDemo = () => {
 
   React.useLayoutEffect(() => {
     if (el.current) {
-      // console.log(el.current);
       setWidth(el.current.getBoundingClientRect().width);
     }
   }, [el.current]);
